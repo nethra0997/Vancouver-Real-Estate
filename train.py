@@ -24,7 +24,7 @@ features, target = load_data(csv_path)
 x_train, x_test, y_train, y_test = train_test_split(features, target, test_size=0.2, random_state=0)
 
 # Train the model
-model = train_model(x_train, y_train, max_depth=5)  # Adjust max_depth as needed
+model = train_model(x_train, y_train, max_depth=6)  # Adjust max_depth as needed
 
 # Save the model
 joblib.dump(model, 'vancouver_housing_model.joblib')

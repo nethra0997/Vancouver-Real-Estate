@@ -20,15 +20,11 @@ sns.scatterplot(x='Sqft', y='Sold_price', data=df, color='lightseagreen')
 sns.regplot(x='Sqft', y='Sold_price', data=df, scatter=False, color='lightseagreen', 
             line_kws={"label":"y={0:.1f}x+{1:.1f}".format(slope,intercept)})
 
-# Annotate with the linear regression equation
 plt.legend()
 plt.title('Sqft vs Sold Price')
 plt.xlabel('Sqft')
 plt.ylabel('Sold Price')
-
-# Show plot
 plt.show()
 
-# Print the regression equation
 print(f"The equation of the regression line is: y = {slope:.2f}x + {intercept:.2f}")
 

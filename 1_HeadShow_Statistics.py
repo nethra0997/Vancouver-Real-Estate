@@ -13,6 +13,4 @@ pd.set_option('display.float_format', '{:.2f}'.format)
 
 # Generate the descriptive statistics of dataset
 stats = df.describe()
-
-# Display the statistical analysis result
 print(stats)
